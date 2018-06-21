@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchrajtres" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gererreservation.AjouterreservationController">
+    <stylesheets>
+        <URL value="@ajouterreservation.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="165.0" layoutY="34.0" prefHeight="39.0" prefWidth="315.0" text="Ajouter Reservation" textFill="#f1c40f">
+         <font>
+            <Font size="31.0" />
+         </font></Label>
+      <JFXComboBox fx:id="numc" focusColor="#f1c40f" layoutX="157.0" layoutY="154.0" prefHeight="26.0" prefWidth="168.0" unFocusColor="#f1c40f" />
+      <Label layoutX="71.0" layoutY="172.0" text="NUMC" textFill="#f1c40f" />
+      <JFXComboBox fx:id="idvol" focusColor="#f1c40f" layoutX="154.0" layoutY="207.0" prefHeight="26.0" prefWidth="168.0" unFocusColor="#f1c40f" />
+      <JFXDatePicker fx:id="dateres" defaultColor="#f1c40f" layoutX="151.0" layoutY="263.0" />
+      <Label layoutX="73.0" layoutY="225.0" text="IDVOL" textFill="#f1c40f" />
+      <Label layoutX="62.0" layoutY="276.0" prefHeight="16.0" prefWidth="70.0" text="DATERES" textFill="#f1c40f" />
+      <JFXButton fx:id="valideres" layoutX="231.0" layoutY="339.0" onAction="#AjouterReservation" prefHeight="34.0" prefWidth="184.0" text="VAlider Reservation" textFill="#f1c40f" />
+      <JFXButton fx:id="exit" layoutX="458.0" layoutY="339.0" onAction="#exitt" prefHeight="34.0" prefWidth="92.0" text="Exit" textFill="#f1c40f" />
+      <FontAwesomeIconView fill="#f1c40f" glyphName="CLIPBOARD" layoutX="26.0" layoutY="120.0" size="90" />
+      <FontAwesomeIconView fill="#f1c40f" glyphName="PLUS" layoutX="101.0" layoutY="64.0" size="30" />
+   </children>
+</AnchorPane>

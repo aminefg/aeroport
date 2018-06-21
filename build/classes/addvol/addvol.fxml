@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchradv" prefHeight="552.0" prefWidth="612.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="addvol.AddvolController">
+    <stylesheets>
+        <URL value="@addvol.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="140.0" layoutY="134.0" text="ID VOL" textFill="#f1c40f" />
+      <Label layoutX="135.0" layoutY="229.0" text="Aeroport Depart" textFill="#f1c40f" />
+      <Label layoutX="133.0" layoutY="278.0" text="Aeroport Arrivee" textFill="#f1c40f" />
+      <Label layoutX="135.0" layoutY="327.0" text="HEURE ARRIVEE" textFill="#f1c40f" />
+      <Label layoutX="135.0" layoutY="372.0" text="Heure DEPART" textFill="#f1c40f" />
+      <Label layoutX="174.0" layoutY="27.0" prefHeight="39.0" prefWidth="355.0" text="AJOUTER VOL" textFill="#f1c40f">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <FontAwesomeIconView fill="#f1c40f" glyphName="PLUS" layoutX="108.0" layoutY="54.0" size="35" text="" wrappingWidth="15.714285850524902" />
+      <FontAwesomeIconView fill="#f1c40f" glyphName="PLANE" layoutX="39.0" layoutY="89.0" size="80" />
+      <JFXTextField fx:id="idvol" focusColor="#f1c40f" layoutX="266.0" layoutY="123.0" promptText="Vol ID" unFocusColor="#f1c40f" />
+      <JFXButton fx:id="ajtvol" layoutX="221.0" layoutY="484.0" onAction="#ajoutervol" prefHeight="39.0" prefWidth="161.0" text="AJOUTER VOL" textFill="#f1c40f" />
+      <JFXButton fx:id="exit1" layoutX="414.0" layoutY="483.0" onAction="#exitt" prefHeight="39.0" prefWidth="161.0" text="EXIT" textFill="#f1c40f" />
+      <JFXComboBox fx:id="aerodep" focusColor="#f1c40f" layoutX="263.0" layoutY="224.0" prefHeight="26.0" prefWidth="155.0" promptText="aerodep" unFocusColor="#f1c40f" />
+      <JFXComboBox fx:id="aeroariv" focusColor="#f1c40f" layoutX="263.0" layoutY="265.0" prefHeight="26.0" prefWidth="161.0" promptText="aeroariv" unFocusColor="#f1c40f" />
+      <Label layoutX="134.0" layoutY="412.0" text="Date Vol" textFill="#f1c40f" />
+      <JFXDatePicker fx:id="date" defaultColor="#f1c40f" layoutX="263.0" layoutY="407.0" prefHeight="26.0" prefWidth="161.0" promptText="choose date of vol" />
+      <JFXComboBox fx:id="idavion" focusColor="#f1c40f" layoutX="266.0" layoutY="175.0" prefHeight="26.0" prefWidth="116.0" promptText="avion id" unFocusColor="#f1c40f" />
+      <Label layoutX="135.0" layoutY="180.0" text="ID Avion" textFill="#f1c40f" />
+      <JFXTimePicker fx:id="harv" defaultColor="#f1c40f" layoutX="266.0" layoutY="315.0" />
+      <JFXTimePicker fx:id="hdep" defaultColor="#f1c40f" layoutX="266.0" layoutY="355.0" />
+   </children>
+</AnchorPane>

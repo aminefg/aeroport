@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchrgrv" prefHeight="564.0" prefWidth="691.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gerervols.GerervolsController">
+    <stylesheets>
+        <URL value="@gerervols.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="208.0" layoutY="14.0" prefHeight="64.0" prefWidth="188.0" text="GERER VOLS" textFill="#f1c40f">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tablevol" layoutX="11.0" layoutY="106.0" prefHeight="323.0" prefWidth="668.0">
+        <columns>
+          <TableColumn fx:id="idvol" prefWidth="61.0" text="ID VOL" />
+          <TableColumn fx:id="depart" prefWidth="144.0" text="Aero depart" />
+            <TableColumn fx:id="arrivee" prefWidth="148.0" text="Aero Arrivée" />
+            <TableColumn fx:id="hdep" prefWidth="119.0" text="DateVol" />
+            <TableColumn fx:id="hariv" prefWidth="105.0" text="Hdepart" />
+            <TableColumn fx:id="date" prefWidth="90.0" text="Harrivee" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="ajtvol" layoutX="73.0" layoutY="454.0" onAction="#ajoutervol" prefHeight="38.0" prefWidth="155.0" text="Ajouter Vol" textFill="#f1c40f">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="exit1" layoutX="485.0" layoutY="505.0" onAction="#exitt" prefHeight="38.0" prefWidth="86.0" text="Exit" textFill="#f1c40f">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="suppvol" layoutX="242.0" layoutY="454.0" onAction="#supprimervol" prefHeight="38.0" prefWidth="155.0" text="Supprimer Vol" textFill="#f1c40f">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <FontAwesomeIconView fill="#f1c40f" glyphName="PLANE" layoutX="36.0" layoutY="79.0" size="60" />
+      <FontAwesomeIconView fill="#f1c40f" glyphName="GEAR" layoutX="89.0" layoutY="50.0" size="25" />
+   </children>
+</AnchorPane>

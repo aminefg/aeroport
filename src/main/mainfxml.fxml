@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchrpan" nodeOrientation="LEFT_TO_RIGHT" prefHeight="672.0" prefWidth="790.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.MainfxmlController">
+    <stylesheets>
+        <URL value="@mainfxml.css" />
+    </stylesheets>
+   <children>
+      <TableView fx:id="tableclient" layoutX="26.0" layoutY="106.0" prefHeight="449.0" prefWidth="740.0">
+        <columns>
+          <TableColumn fx:id="num" prefWidth="102.0" text="numclient" />
+          <TableColumn fx:id="nom" prefWidth="74.0" text="nom" />
+            <TableColumn fx:id="prenom" prefWidth="103.0" text="Prenom" />
+            <TableColumn fx:id="datenaiss" prefWidth="165.0" text="datenaiss" />
+            <TableColumn fx:id="volid" prefWidth="139.0" text="VolID" />
+            <TableColumn fx:id="passport" prefWidth="160.0" text="passport" />
+
+        </columns>
+      </TableView>
+      <Label layoutX="78.0" layoutY="29.0" text="AERO BASE" textFill="#f1c40f">
+         <font>
+            <Font size="39.0" />
+         </font>
+      </Label>
+      <FontAwesomeIconView fill="#f1c40f" glyphName="GEAR" layoutX="31.0" layoutY="68.0" size="40" />
+      <FontAwesomeIconView fill="#f1c40f" glyphName="PLANE" layoutX="322.0" layoutY="73.0" size="60" text="" />
+      <JFXButton fx:id="exit" layoutX="642.0" layoutY="603.0" onAction="#exitt" prefHeight="47.0" prefWidth="128.0" text="EXIT" textFill="#f1c40f">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXButton>
+      <JFXHamburger fx:id="hamburger" layoutX="692.0" layoutY="14.0" prefHeight="57.0" prefWidth="94.0" />
+      <JFXDrawer fx:id="drawer" defaultDrawerSize="190.0" layoutX="8.0" layoutY="85.0" overLayVisible="false" prefHeight="510.0" prefWidth="156.0" />
+      <VBox fx:id="box" alignment="CENTER" layoutX="391.0" layoutY="114.0" prefHeight="496.0" prefWidth="156.0">
+         <children>
+            <JFXButton fx:id="ajt" contentDisplay="TOP" onAction="#ajouteclt" prefHeight="60.0" prefWidth="156.0" text="AJOUTER CLIENT" textFill="#f1c40f">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fx:id="user13" fill="#f1c40f" glyphName="USER" size="35" wrappingWidth="27.000000841915607" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="supclt" contentDisplay="TOP" onAction="#deleteclt" prefHeight="57.0" prefWidth="186.0" text="SUPPRIMER CLIENT" textFill="#f1c40f">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fx:id="user12" fill="#f1c40f" glyphName="TRASH" size="35" wrappingWidth="27.000000841915607" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="gererp" contentDisplay="TOP" onAction="#gererperso" prefHeight="60.0" prefWidth="185.0" text=" PERSONNELS" textFill="#f1c40f">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fx:id="user11" fill="#f1c40f" glyphName="USER" size="35" wrappingWidth="27.000000841915607" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="gererrsv" contentDisplay="TOP" onAction="#gererres" prefHeight="60.0" prefWidth="185.0" text=" RESERVATIONS" textFill="#f1c40f">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fx:id="user1" fill="#f1c40f" glyphName="CLIPBOARD" size="35" wrappingWidth="33.00000084191561" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="gererv" contentDisplay="TOP" onAction="#gerervols" prefHeight="46.0" prefWidth="156.0" text="GERER VOLS" textFill="#f1c40f">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="#f1c40f" glyphName="PLANE" size="35" text="" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="actualiser" contentDisplay="TOP" onAction="#refresh" prefHeight="47.0" prefWidth="190.0" text="  REFRESH" textFill="#f1c40f">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="#f1c40f" glyphName="REFRESH" size="35" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="avn" contentDisplay="TOP" onAction="#gereravion" prefHeight="46.0" prefWidth="156.0" text="GERER AVION" textFill="#f1c40f">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="#f1c40f" glyphName="PLANE" size="35" text="" />
+               </graphic>
+            </JFXButton>
+         </children>
+         <padding>
+            <Insets bottom="70.0" top="30.0" />
+         </padding>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+      <JFXButton fx:id="dl" contentDisplay="TOP" layoutX="144.0" layoutY="598.0" onAction="#delselect" prefHeight="54.0" prefWidth="169.0" text="supprimer selection" textFill="#f1c40f">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fx:id="user121" fill="#f1c40f" glyphName="TRASH" size="20" wrappingWidth="27.000000841915607" />
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchravion" prefHeight="569.0" prefWidth="860.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gereravions.GereravionsController">
+    <stylesheets>
+        <URL value="@gereravions.css" />
+    </stylesheets>
+   <children>
+      <TableView fx:id="tableavion" layoutX="14.0" layoutY="215.0" prefHeight="200.0" prefWidth="838.0">
+        <columns>
+            <TableColumn fx:id="typeav" prefWidth="75.0" text="type" />
+          <TableColumn fx:id="idav" prefWidth="75.0" text="idavion" />
+          <TableColumn fx:id="nomav" prefWidth="75.0" text="nom" />
+            <TableColumn fx:id="marqueav" prefWidth="75.0" text="marque" />
+            <TableColumn fx:id="compav" prefWidth="75.0" text="compagnie" />
+            <TableColumn fx:id="maint" prefWidth="75.0" text="maint" />
+            <TableColumn fx:id="nbpersav" prefWidth="75.0" text="NBPERS" />
+            <TableColumn fx:id="nbpassg" prefWidth="75.0" text="NBPASS" />
+            <TableColumn fx:id="masse" prefWidth="75.0" text="masse" />
+            <TableColumn fx:id="volmax" prefWidth="75.0" text="volume" />
+            <TableColumn fx:id="nbpersavp" prefWidth="87.0" text="NBP" />
+        </columns>
+      </TableView>
+      <Label layoutX="142.0" layoutY="174.0" text="LISTE AVIONS" textFill="#f1c40f" />
+      <JFXComboBox fx:id="avionid" focusColor="#f1c40f" layoutX="297.0" layoutY="169.0" onMouseClicked="#loadavion" prefHeight="26.0" prefWidth="146.0" promptText="id avion" unFocusColor="#f1c40f" />
+      <JFXButton fx:id="ajtavion" layoutX="91.0" layoutY="500.0" onAction="#ajouteravion" prefHeight="26.0" prefWidth="140.0" text="AjouterAvion" textFill="#f1c40f" />
+      <JFXButton fx:id="exit" layoutX="689.0" layoutY="514.0" onAction="#exitt" prefHeight="26.0" prefWidth="132.0" text="Exit" textFill="#f1c40f" />
+      <JFXButton fx:id="actualiser" layoutX="249.0" layoutY="500.0" onAction="#refresh" prefHeight="28.0" prefWidth="140.0" text="Reload" textFill="#f1c40f" />
+      <Label layoutX="274.0" layoutY="28.0" text="GESTION AVION" textFill="#f1c40f">
+         <font>
+            <Font size="39.0" />
+         </font>
+      </Label>
+      <FontAwesomeIconView fill="#f1c40f" glyphName="GEAR" layoutX="125.0" layoutY="50.0" size="40" />
+      <FontAwesomeIconView fill="#f1c40f" glyphName="PLANE" layoutX="34.0" layoutY="115.0" size="100" text="" wrappingWidth="47.14285659790039" />
+   </children>
+</AnchorPane>
